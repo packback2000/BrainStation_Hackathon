@@ -55,14 +55,33 @@ getNewQuestion = () => {
 
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
+        console.log(e.target);
+
         if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
         let selectedChoice = e.target;
-        let selectedAnswer = selectedChoice.currentQuestion['answer'];
+        let selectedAnswer = selectedChoice.dataset[answers];
 
-        getNewQuestion();
+        const classToApply =
+        selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+    if (classToApply === 'correct') {
+        incrementScore(CORRECT_BONUS);
+    }
+
+    selectedChoice.parentElement.classList.add(classToApply);
+
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+        }, 1000);
+    });
+
     });
 
 
-});
+incrementScore = (num) => {
+    score += num;
+    scoreText.innerText = score;
+};
