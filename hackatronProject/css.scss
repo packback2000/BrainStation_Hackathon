@@ -1,0 +1,184 @@
+body {
+    background-image: url(./black-g525eb15a4_1920.jpg);
+    background-size: cover;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#game {
+    padding-top: 20px;
+}
+
+#question {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 20px solid rgb(1, 25, 34);
+    background-color: white;
+    
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: rgb(32, 21, 9);
+    transform: translate(3rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: #56a5eb;
+    color: white;
+}
+
+.choice-text {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+#quizContainer {
+    width: 70%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(1, 25, 34);
+}
+
+.correct {
+    background-color: #28a745;
+
+}
+
+.incorrect {
+    background-color: red;
+}
+
+.the-end {
+    font-size: 60px;
+    color: rgb(1, 63, 63);
+    display: flex;
+    justify-content: center;
+    
+}
+
+#hud {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+.hud-main-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
+#finalScore{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    border: 5px solid black;
+    width: fit-content;
+    margin: 300px auto;
+    padding: 1px;
+}
+
+.btn {
+    text-decoration: none;
+    margin:5px;
+}
+
+.playAgainBox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playAgainBox p {
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: maroon;
+    background-color: wheat;
+    padding: 10px;
+}
+
+#saveScoreBtn {
+    background-color: rgb(7, 44, 7);
+    color: white;
+    font-size: 20px;
+}
+
+.moviesQuiz{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: ivory;
+    background-color: rgb(1, 25, 34);
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+#beginning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+    
+    h1{
+        font-size: 11vw;
+    }
+    h2 {
+        font-size: 4vw;
+    }
+    button {
+        font-size: 3vw;
+        padding: 10px;
+        margin: 16px;
+    }
+}
+
+#end {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
