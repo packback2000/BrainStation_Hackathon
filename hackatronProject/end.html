@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore"></h1>
+            <form>
+                <input type="text" name="username" id="username" placeholder="Name">
+                <button type="submit" class="btn" id="saveScoreBtn" onclick="saveHighScore(event)" disabled >Save</button>
+            </form>
+            <div class="playAgainBox">
+            <a class="btn" href="quiz.html"><p>Play Again</p></a>
+            <a class="btn" href="beginning.html"><p>Not Interested</p></a>
+            </div>
+        </div>
+    </div>
+    <script src="end.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
